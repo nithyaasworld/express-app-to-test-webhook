@@ -5,7 +5,8 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  console.log("\n \n Get request received");
+  res.send('I love BK!')
 })
 
 app.post('/', jsonParser, function(req,res){
